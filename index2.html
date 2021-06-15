@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>Sayreville War Memorial High 2020 Social Emotional Learning Virtual Event</title>
+
+
+	<body class="body">
+
+		<style>
+			* {
+				margin: 10;
+				padding: 10;
+				box-sizing: border-box;
+				text-decoration: none;
+				list-style: none;
+			}
+
+			html {
+				font-family: sans-serif;
+				-ms-text-size-adjust: 100%;
+				-webkit-text-size-adjust: 100%
+			}
+
+			body {
+				margin: 0
+			}
+
+			h1 {
+				font-family: Arial, Helvetica, sans-serif;
+				color: black;
+				margin-bottom: 50px;
+				font-size: 1.5em;
+			}
+
+			h2 {
+				font-family: "Raleway", sans-serif, Arial, Helvetica;
+				font-size: 2.4em;
+				font-weight: bold;
+				color: #474958;
+				-webkit-transition: font-size 0.3s;
+				-moz-transition: font-size 0.3s;
+				-o-transition: font-size 0.3s;
+				transition: font-size 0.3s;
+			}
+
+			h3 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 30px;
+				color: black;
+				-webkit-transition: font-size 0.3s;
+				-moz-transition: font-size 0.3s;
+				-o-transition: font-size 0.3s;
+				transition: font-size 0.3s;
+			}
+
+			p {
+				font-size: 20px;
+				font-style: italic;
+				font-style: bold;
+				font-family: "Times New Roman", serif;
+				color: black;
+			}
+
+			a {
+				text-decoration: none;
+				color: rgb(0, 0, 205);
+			}
+
+			article {
+				margin-right: 9%;
+				margin-left: 9%;
+				padding-top: 20px;
+				padding-bottom: 55px;
+			}
+
+			.header {
+				text-align: center;
+			}
+
+			.primary-header {
+				display: flex;
+				align-items: center;
+				padding: 10px;
+			}
+
+			#top-row {
+				background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+				url("https://pbs.twimg.com/media/EXRnrZFU4AAas_J.jpg"); //OR https://mdreducation.com/wp-content/uploads/2018/05/MDR-social-emotional-learning.jpg   OR   
+
+				//https://i0.wp.com/es.hawthorn73.org/wp-content/uploads/2018/10/Social-Emotional-Learning-Pic2.jpg?fit=500%2C400&ssl=1 OR
+
+				//https://www.volunteerkamloops.org/wp-content/uploads/2020/02/mental-health-istock.jpg
+				background-size: 30%;
+				background-attachment: fixed;
+				width: 60%;
+				padding-left: 80px;
+				padding-top: 20%;
+				position: relative;
+				right: -20%;
+			}
+
+			#square-info {
+				background-color: white;
+				background-color: rgba(255, 255, 255, 0.5);
+				position: relative;
+				right: 6%;
+				top: -59px;
+				padding-left: 10px;
+				border-radius: 15px;
+				font-size: 24px;
+				margin-left: 25px;
+			}
+
+			#square-info h3 {
+				font-size: 38px;
+				text-align: center;
+				font-variant: small-caps;
+			}
+
+			.open {
+				position: fixed;
+				top: 40px;
+				right: 40px;
+				width: 50px;
+				height: 50px;
+				display: block;
+				cursor: pointer;
+				transition: opacity 0.2s linear;
+				&:hover {
+					opacity: 1;
+				}
+				span {
+					display: block;
+					float: left;
+					clear: both;
+					height: 4px;
+					width: 40px;
+					border-radius: 40px;
+					background-color: black;
+					position: absolute;
+					right: 3px;
+					top: 3px;
+					overflow: hidden;
+					transition: all 0.4s ease;
+					&:nth-child(1) {
+						margin-top: 10px;
+						z-index: 9;
+					}
+					&:nth-child(2) {
+						margin-top: 25px;
+					}
+					&:nth-child(3) {
+						margin-top: 40px;
+					}
+				}
+			}
+
+			.sub-menu {
+				transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+				height: 0;
+				width: 0;
+				right: 0;
+				top: 0;
+				position: absolute;
+				background-color: rgba(38, 84, 133, 0.54);
+				border-radius: 50%;
+				z-index: 18;
+				overflow: hidden;
+				li {
+					display: block;
+					float: right;
+					clear: both;
+					height: auto;
+					margin-right: -160px;
+					transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+					&:first-child {
+						margin-top: 180px;
+					}
+					&:nth-child(1) {
+						-webkit-transition-delay: 0.05s;
+					}
+					&:nth-child(2) {
+						-webkit-transition-delay: 0.1s;
+					}
+					&:nth-child(3) {
+						-webkit-transition-delay: 0.15s;
+					}
+					&:nth-child(4) {
+						-webkit-transition-delay: 0.2s;
+					}
+					&:nth-child(5) {
+						-webkit-transition-delay: 0.25s;
+					}
+					a {
+						color: black;
+						font-family: "Lato", Arial, Helvetica, sans-serif;
+						font-size: 16px;
+						width: 200%;
+						display: block;
+						float: left;
+						line-height: 35px;
+					}
+				}
+			}
+
+			.oppenned {
+				.sub-menu {
+					opacity: 1;
+					height: 400px;
+					width: 400px;
+				}
+				span:nth-child(2) {
+					overflow: visible;
+				}
+				span:nth-child(1),
+				span:nth-child(3) {
+					z-index: 100;
+					transform: rotate(45deg);
+				}
+				span:nth-child(1) {
+					transform: rotate(45deg) translateY(12px) translateX(12px);
+				}
+				span:nth-child(2) {
+					height: 400px;
+					width: 400px;
+					right: -160px;
+					top: -160px;
+					border-radius: 50%;
+					background-color: black;
+				}
+				span:nth-child(3) {
+					transform: rotate(-45deg) translateY(-10px) translateX(10px);
+				}
+				li {
+					margin-right: 168px;
+				}
+			}
+
+			.wrapper {
+				min-height: 100%;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+			}
+
+			.main-content {
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column nowrap;
+			}
+
+			.primary-h1 {
+				text-align: center;
+				padding: 20px 0;
+				font: 3em "Oswald", sans-serif;
+				color: #474958;
+				position: relative;
+			}
+
+			.primary-h1>span {
+				background: #fff;
+				position: relative;
+				z-index: 2;
+				padding: 0 10px;
+			}
+
+			hr {
+				width: 10%;
+				margin-left: 45%;
+				margin-right: auto;
+				border-top: 3px double #095484;
+			}
+
+			.primary-h1::after {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				left: 5%;
+				width: 90%;
+				top: 50%;
+				height: 1px;
+
+			}
+
+			.posts {
+				padding: 2rem;
+			}
+
+			.posts>ul {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				grid-gap: 0.5rem;
+			}
+
+			.posts>ul>li {
+				border: 1px solid #E2E2E2;
+				border-radius: .5rem;
+			}
+
+			.posts>ul>li>figure {
+				max-height: 220px;
+				overflow: hidden;
+				border-top-left-radius: .5rem;
+				border-top-right-radius: .5rem;
+				position: relative;
+			}
+
+			.posts>ul>li>figure>iframe {
+				width: 100%;
+
+			}
+
+			.posts>ul>li>figure>figcaption {
+				position: absolute;
+				bottom: 0;
+				background-color: rgba(0, 0, 0, .7);
+				width: 100%;
+			}
+
+			.posts>ul>li>figure>figcaption>h3 {
+				color: white;
+				padding: .75rem;
+				font-size: 1.25rem;
+			}
+
+			.posts>ul>li>p {
+				font-size: 1rem;
+				line-height: 1.5;
+				padding: 1rem .75rem;
+				color: #666666;
+			}
+
+			.posts>ul>li>a {
+				padding: .5rem 1rem;
+				margin: .5rem;
+			}
+
+
+
+			.section-wrapper {
+				display: flex;
+				flex-flow: row wrap;
+				flex: 1 1 100%;
+			}
+
+			.two-section {
+				width: 50%;
+				padding: 10px 10px 0 10px;
+				display: flex;
+				flex-flow: column nowrap;
+			}
+
+			.stretchy-list {
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+			}
+
+			.stretchy-list>li {
+				width: 100%;
+				padding-bottom: 5px;
+			}
+
+
+			.generic-header {
+				font-size: 2.3em;
+				font-weight: bold;
+				color: DarkGreen;
+				font-type: italic;
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+			}
+
+			.generic-sub {
+				font-size: 1.9em;
+				font-weight: 100;
+				color: DarkGreen;
+				font-type: italic;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				margin-bottom: 5px;
+			}
+
+			.generic-para {
+				font: 1.2em/1.5 Arial;
+				color: rgb(95, 95, 95);
+				margin-bottom: 10px;
+			}
+
+			#generic-para1 {
+				font-size: 28px;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+
+			#s5 h2 {
+				text-align: center;
+				color: #3C1874;
+			}
+
+			#s5 h3 {
+				text-align: center;
+				color: #3C1874;
+				font-size: 25px;
+			}
+
+			#s6 h2 {
+				text-align: center;
+			}
+
+			#s6 p {
+				text-align: center;
+
+
+			}
+
+			#s6 ul {
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
+
+			}
+
+			#p {
+				margin-left: 20%;
+				margin-right: 20%;
+			}
+
+
+			#s5 iframe {
+				max-width: 560px;
+				max-height: 315px;
+				margin-left: 25%;
+			}
+
+
+			.margin {
+				margin-right: 6%;
+				margin-left: 6%;
+				padding-top: 20px;
+				padding-bottom: 55px;
+			}
+
+
+			.column {
+				float: left;
+				width: 25%;
+				padding: 10px;
+				padding-left: 60px;
+			}
+
+
+			.column img {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+
+			.column img:hover {
+				opacity: 1;
+			}
+
+
+
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+
+			.container1 {
+				position: relative;
+				display: none;
+			}
+
+
+			#imgtext {
+				position: absolute;
+				bottom: 15px;
+				left: 15px;
+				color: white;
+				font-size: 20px;
+			}
+
+
+			.closebtn {
+				position: absolute;
+				top: 10px;
+				left: 72%;
+				color: white;
+				font-size: 35px;
+				cursor: pointer;
+			}
+
+			footer {
+				border-top: 3px solid #e0e4e8;
+
+			}
+
+			.footer-clean {
+				padding: 50px 0;
+				background-color: #fff;
+				color: blue;
+				text-align: center;
+			}
+
+			.footer-clean h3 {
+				margin-top: 0;
+				margin-bottom: 12px;
+				font-weight: bold;
+				font-size: 20px;
+				text-align: center;
+				color: #FFD700;
+			}
+
+			.footer-clean ul {
+				padding: 0;
+				list-style: none;
+				line-height: 1.6;
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+
+			.footer-clean ul a {
+				color: inherit;
+				text-decoration: none;
+				opacity: 0.8;
+				color: #4682B4;
+				font-size: 19px;
+			}
+
+			.footer-clean ul a:hover {
+				opacity: 1;
+			}
+
+			.column1 {
+				float: left;
+				width: 30%;
+				height: 80px;
+				padding-left: 230px;
+				font-weight: bold;
+			}
+
+			.tooltip {
+				position: relative;
+				display: inline-block;
+			}
+
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: white;
+				color: black;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				position: absolute;
+				z-index: 1;
+				bottom: 100%;
+				left: 50%;
+				margin-left: -60px;
+			}
+
+
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+			}
+
+
+			.video {
+				position: relative;
+				padding-bottom: 26.25%;
+			}
+
+			.video iframe {
+				width: 100%;
+				height: 100%;
+			}
+
+			.video-layout {
+				max-width: 500px;
+				border: 1px solid green;
+			}
+
+			#vid-left {
+				float: left;
+				padding: 5px;
+				width: 33%;
+				box-sizing: border-box;
+			}
+
+			#vid-mid {
+				float: left;
+				padding: 5px;
+				width: 33%;
+				box-sizing: border-box;
+			}
+
+			#vid-right {
+				float: left;
+				padding: 5px;
+				width: 33%;
+				box-sizing: border-box;
+			}
+
+
+			.c>div {
+				padding: 1em;
+			}
+
+			@media screen and (min-width: 31.42em) {
+				.c2,
+				.c3 {
+					float: left;
+					width: 50%;
+				}
+			}
+
+			.c>div {
+				padding: 1em;
+			}
+
+			@media screen and (min-width: 11.42em) {
+				.c4 {
+					float: left;
+					width: 50%;
+					position: relative;
+					top: 20px;
+
+
+				}
+
+				.c5 {
+					float: left;
+					width: 50%;
+					position: relative;
+					bottom: -10px;
+				}
+			}
+
+			.expskills {
+
+				margin-top: -10px;
+				margin-left: -30px;
+				border-bottom: solid black 3px;
+				box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+				border-radius: 5px;
+				width: 120%;
+			}
+
+			.expskill h2 {
+				text-align: center;
+			}
+
+			.expskill iframe {
+				display: flex;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.expskills1 {
+
+				margin-top: -10px;
+				margin-left: -30px;
+				border-bottom: solid black 3px;
+				box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+				border-radius: 5px;
+				width: 110%;
+			}
+
+			.expskill1 h2 {
+				text-align: center;
+			}
+
+			.expskills1 {
+
+				margin-top: -10px;
+				margin-left: -30px;
+				border-bottom: solid black 3px;
+				box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+				border-radius: 5px;
+				width: 118%;
+			}
+
+			.expskill1 h2 {
+				text-align: center;
+			}
+
+			.expskills2 {
+
+				margin-top: 50px;
+				margin-left: -30px;
+				border-bottom: solid black 3px;
+				box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+				border-radius: 5px;
+				width: 120%;
+				height: 48%;
+			}
+
+			.expskill2 h2 {
+				text-align: center;
+			}
+
+			.img-wrap,
+			h1 {
+				text-align: center;
+
+			}
+
+			.img-wrap a img {
+				display: block;
+			}
+
+			.img-wrap>a {
+				display: inline-block;
+				vertical-align: middle;
+				border: 1px solid #555
+			}
+
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+
+			.buttons {
+				margin-top: 50px;
+				text-align: center;
+				border-radius: 30px;
+
+
+			}
+
+			.blob-btn {
+				z-index: 1;
+				position: relative;
+				padding: 20px 46px;
+				margin-bottom: 30px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #252525;
+				font-size: 16px;
+				font-weight: bold;
+				background-color: blue;
+				border: 1px solid green;
+				// outline: none;
+				-webkit-transition: color 1.5s;
+				transition: color 1.5s;
+				cursor: pointer;
+				border-radius: 30px;
+			}
+
+
+
+			.blob-btn:before {
+				content: "";
+				z-index: 1;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+			}
+
+			.blob-btn:after {
+				content: "";
+				z-index: -2;
+				position: absolute;
+				left: 3px;
+				top: 3px;
+				width: 100%;
+				height: 100%;
+				-webkit-transition: all 0.3s 0.2s;
+				transition: all 0.3s 0.2s;
+				border-radius: 30px;
+			}
+
+			.blob-btn:hover {
+				color: #000;
+				border-radius: 30px;
+			}
+
+
+			.blob-btn:hover:after {
+				-webkit-transition: all 0.3s;
+				transition: all 0.3s;
+				left: 0;
+				top: 0;
+				border-radius: 30px;
+			}
+
+
+			.blob-btn__inner {
+				z-index: -1;
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+				background: #ffffff;
+			}
+
+			.blob-btn__blobs {
+				position: relative;
+				display: block;
+				height: 100%;
+				-webkit-filter: url("#goo");
+				filter: url("#goo");
+			}
+
+			.blob-btn__blob {
+				position: absolute;
+				top: 2px;
+				width: 25%;
+				height: 100%;
+				background: #fff;
+				border-radius: 100%;
+				-webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+				transform: translate3d(0, 150%, 0) scale(1.7);
+				-webkit-transition: -webkit-transform 0.45s;
+				transition: -webkit-transform 0.45s;
+				transition: transform 0.45s;
+				transition: transform 0.45s, -webkit-transform 0.45s;
+			}
+
+			.blob-yellow {
+				background: #E0FF00;
+			}
+
+			.blob-blue {
+				background: #76A0D8;
+			}
+
+			.blob-red {
+				background: #f22b0a;
+			}
+
+			.blob-btn:hover.blob-hover-text-white {
+				color: #fff;
+			}
+
+			@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+				.blob-btn__blob {
+					-webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+					transform: translate3d(0, 150%, 0) scale(1.4);
+				}
+			}
+
+			.blob-btn__blob:nth-child(1) {
+				left: 0%;
+				-webkit-transition-delay: 0s;
+				transition-delay: 0s;
+			}
+
+			.blob-btn__blob:nth-child(2) {
+				left: 30%;
+				-webkit-transition-delay: 0.08s;
+				transition-delay: 0.08s;
+			}
+
+			.blob-btn__blob:nth-child(3) {
+				left: 60%;
+				-webkit-transition-delay: 0.16s;
+				transition-delay: 0.16s;
+			}
+
+			.blob-btn__blob:nth-child(4) {
+				left: 90%;
+				-webkit-transition-delay: 0.24s;
+				transition-delay: 0.24s;
+			}
+
+			.blob-btn:hover .blob-btn__blob {
+				-webkit-transform: translateZ(0) scale(1.7);
+				transform: translateZ(0) scale(1.7);
+			}
+
+			@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+				.blob-btn:hover .blob-btn__blob {
+					-webkit-transform: translateZ(0) scale(1.4);
+					transform: translateZ(0) scale(1.4);
+				}
+			}
+		</style>
+</head>
+
+<body class="body">
+
+
+	<nav>
+		<div class="header">
+			<h2>Sayreville War Memorial High 2020 Social Emotional Learning Virtual Event
+			</h2>
+		</div>
+	</nav>
+	<header class="primary-header">
+
+
+		<div id="center">
+			<div class="row section" id="top-row">
+				<div style="height: 250px;"></div>
+				<div>
+					<div id="top-row-left-column"></div>
+					<div id="top-row-right-column">
+						<div id="square-info">
+							<h3>Bombers Be Strong, Be Healthy, Be Happy</h3>
+
+						</div>
+					</div>
+					<div id="top-row-right-space"></div>
+					<div style="clear: both;"></div>
+				</div>
+
+			</div>
+		</div>
+
+	</header>
+
+	<div class="open">
+		<span class="cls"></span>
+<span>
+<ul class="sub-menu ">
+<li><a href="#s1" class="active">Home</a></li>
+<li><a href="#s2">Live Presentation</a></li>
+<li><a href="#s3">Wellness Corner</a></li>
+<li><a href="#s4">Zen zone </a></li>
+<li><a href="#s5">Mindfulness</a></li>
+<li><a href="#s6">Resources</a></li>
+</ul>
+</span>
+<span class="cls"></span>
+</div>
+<div class="wrapper">
+
+<main class="main-content">
+<h1 class="primary-h1">
+<span><b>Welcome</b></span><hr /> 
+</h1>
+
+<article>
+<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna, lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </b>
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna,  lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna, lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</article>
+
+<div id="s2">
+<h2>Live Presentations</h2>
+<section class="posts" id="posts">
+<ul>
+<li>
+<figure>
+
+<img src="https://media.istockphoto.com/vectors/empty-gray-studio-room-used-as-background-for-display-your-products-vector-id903193958?k=6&m=903193958&s=612x612&w=0&h=IDKd4K2uFwlHxn8aIatplRnTtCeermmR4wp7fQytjfs=">
+<figcaption><h3>Jehyve Floyd</h3></figcaption>
+</figure>
+<p>
+Jehyve Floyd is an American basketball player for Hapoel Gilboa Galil of the Israeli Premier League. Floyd played high school basketball at Sayreville War Memorial (Class of 2015). He played college basketball for the Holy Cross Crusaders, where he was named Patriot League Defensive Player of the Year in both 2018 and 2019.
+
+</p>
+
+</li>
+<li>
+<figure>
+
+<iframe width="400" height="200" src="https://www.youtube.com/embed/uqBA-1JmgAI?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<figcaption><h3>Dr. Brown- Psychologist Video on Anxiety:</h3></figcaption>
+</figure>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna, lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+</p>
+
+</li>
+<li>
+<figure>
+
+<iframe width="400" height="200" src="https://www.youtube.com/embed/uqBA-1JmgAI?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<figcaption><h3>Matt Bellace</h3></figcaption>
+</figure>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna, lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+</p>
+
+</li>
+</ul>
+</section>
+</div> 
+<main class="main-content">
+<div class="section-wrapper">
+<section class="two-section">
+<article id = "s3">
+<div class="expskills">
+
+<div class="expskill">
+<h2  class="generic-header">
+Wellness Corner
+</h2>
+<iframe width="420" height="366" src="https://www.youtube.com/embed/wPZM4o21AvA?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+<p id="generic-para1">
+Nurses-breathing/visualization
+</p>
+
+
+</div>
+</div>
+<div class="expskills2">
+
+<div class="expskill2">
+<br />     
+<br />
+<li><h3 class="generic-sub">Create</h3></li>
+<div class="img-wrap">
+<div class="tooltip">
+<a href="http://www.google.com/url?q=http%3A%2F%2Fwww.jacksonpollock.org%2F&sa=D&sntz=1&usg=AFQjCNF6tW85p67StoWmufhUw4PLd6jh4Q"> <img width="266" height="266"  src="https://lh4.googleusercontent.com/ZdhhtzoMHNtxkBeq2OFviDdFeosAeIHyg9oi0O5egmw2CEpcWBWlEKeueSoRamvTbb6GmkUnRir3Oi_ushEd5RFdaWMxCTzcbOlQUzZ7N-OCKck06C-qB8Gl8a67Aud-rA=w1280" alt="Jackson Pollock Art"></a>
+<span class="tooltiptext">Click to visit</span>
+</div>
+<div class="tooltip">
+<a href="http://www.google.com/url?q=http%3A%2F%2Fweavesilk.com%2F&sa=D&sntz=1&usg=AFQjCNGX4YMi6Jb2d_QH01Moa07Q7vJqIg"> <img width="266" height="266" src="https://lh6.googleusercontent.com/gOd77j8AZ2DAnD4810ib-iCqQ1wM5p_VCR8TjFXqeCXjT4RJX6ARxTJTROhg6-jAvr8nsbFoJSFGnhdL9ZZhZKXnURV4woQZ5C1Ko36Dyl9GbnNfebh3FmTv18JAvEMJhg=w1280" alt="Geometric Interactive Art"></a>
+<span class="tooltiptext">Click to visit</span>
+</div>
+</div>
+<p>Description: Use Reactive Fluid, Geometric Interactive Art, and Spiral Art Maker <a href="https://lh5.googleusercontent.com/3v3X4_HVPSWgQL778_1v8pU9IPBB5hKDO0reczIpResumFLQMmaAepPJHWK_DFsikAlTs8dUhPCcHsaHJUgZogk=w1280">links</a>   
+.</p> 
+
+
+
+
+
+</div>
+</div>
+</section>
+</article>  
+
+
+
+
+<section class="two-section ">
+<article id = "s4">
+
+<div class=" expskills1">
+
+<div class="expskill1">
+<h2  class="generic-header">
+Zen Zone
+</h2> 
+<ul>
+<li><h3 class="generic-sub">Calming Sounds</h3></li>
+<p>Description: Use the sounds below in whatever way is most helpful - as background noise to help you focus while you study, as a quick break, during meditation or sleep, etc.</p> 
+<p class="generic-para">
+
+<div class="video">
+<div id="vid-left">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/dZcuKVA4t5o?autoplay=1&mute=1&playlist=dZcuKVA4t5o&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<div id="vid-mid">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/QZbuj3RJcjI?autoplay=1&mute=1&playlist=QZbuj3RJcjI&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<div id="vid-right">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/savCAd6RyPI?autoplay=1&mute=1&playlist=savCAd6RyPI&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<br />
+<br />
+<li><h3 class="generic-sub">Visual Calming Videos</h3></li>
+
+<div class="video">
+<div id="vid-left">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/b3B1Jh9Xrow?autoplay=1&mute=1&playlist=b3B1Jh9Xrow&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<div id="vid-mid">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/chUwpgiE83I?autoplay=1&mute=1&playlist=chUwpgiE83I&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<div id="vid-right">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/T75IKSXVXlc?autoplay=1&mute=1&playlist=T75IKSXVXlc&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>          
+</div>
+</div>
+
+
+
+
+
+
+</p>
+
+</section>
+</div>
+</article>
+
+<article id="s5">
+<h2>Mindfulness</h2>
+<br /> 
+<div class="c2">
+
+<iframe width="300" height="266" src="https://www.youtube.com/embed/QTsUEOUaWpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>What is Mindfulness?</h3>
+</div>
+<div class="c3">
+
+<iframe width="300" height="266" src="https://www.youtube.com/embed/ZToicYcHIOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>10 Min Daily Meditation</h3>
+</div>
+</div>
+</div>
+
+</article>
+</main>
+
+
+
+<article class="margin" id="s6">
+<h2>Community Resources</h2>
+<br />
+<p> <b>Jamie Hanley</b></p>
+<p><a href="http://www.jamiehanley.com/wp-content/uploads/2020/04/Coping-skills-eBook.pdf" target="_blank">http://www.jamiehanley.com/wp-content/uploads/2020/04/Coping-skills-eBook.pdf</a></p>
+<p>Contact info: 1 Bethany Road,Building 5, Suite 69, Hazlet, NJ 07730</p>
+<p><b>Phone Number: </b><a href="tel:+1732-800-1307">732.800.1307</a></p> 
+<p><b>Mail: </b><a href="mailto:info@jamiehanley.com" target="_blank">info@jamiehanley.com</a></p>
+<br />
+<br />
+<p> <b>High Focus Treatment Centers</b></p>
+<p><a href="https://highfocuscenters.pyramidhealthcarepa.com/" target="_blank">https://highfocuscenters.pyramidhealthcarepa.com/</a></p>
+<p>High Focus Centers is New Jersey’s premier provider of structured outpatient substance abuse and psychiatric treatment programs.</p>
+<p><b>Phone Number: </b><a href="tel:+1877-716-7079">877.716.7079</a></p> 
+<br />
+<br />
+<p> <b>Center for Wellness</b></p>
+<p><a href="" target="_blank">Center for Wellness</a></p>
+<p></p>
+<p><b>Phone Number: </b><a href="tel:+1"></a></p>
+<br />
+<br />
+<p> <b>2nd Floor Helpline</b></p>
+<p><strong>2NDFLOOR<strong> is a confidential and anonymous helpline for New Jersey's youth and young adults. They are available 24/7 365 days a year to help you find solutions to the problems that you face.</p>
+<p><b>Call or Text</b><a href="tel:+1-888-222-2228"></a> 1-888-222-2228</p>
+<br />
+<br />
+<p> <b>SWMHS Counselors</b></p>
+<p><a href="http://sayreville.ss8.sharpschool.com/departments/counseling_department" target="_blank">http://sayreville.ss8.sharpschool.com/departments/counseling_department</a></p>
+<p>	Office Hours:  Monday - Friday, 7:15 am - 3:30 pm</p>
+<p><b>Phone Number: </b><a href="tel:+187732-525-5280">732-525-5280</a></p> 
+<br />
+<br />
+<p> <b>Student Assistance Counselor</b></p>
+<p><a href="mailto:alexandra.catena@sayrevillek12.net" target="_blank">alexandra.catena@sayrevillek12.net </a></p>
+<p>	Ms. Catena, the Student Assistance Counselor (SAC) is a confidential resource that provides substance use education and counseling to students. In addition, Ms. Catena provides support to students for personal issues that may be bothering them or keeping them from being most successful. Students who meet with the SAC were referred by a parent/guardian, school personnel,  a friend with concern, or themselves.</p>
+</article> 
+<br />
+<article class="margin" id="s6">
+<h2>Brain Break</h2>
+<br />
+<div id="p">
+<p> <b>Description:</b> Need a break from work? School? Take a few minutes to step away from all that and give yourself and your brain a time to think about something else. With these short “Brain Break” videos, you can release some of that energy by working out.</p>
+</div>
+
+
+<div class="buttons">
+<div class="c4">
+<a href="https://www.youtube.com/watch?v=OXEMqkccdEQ" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #1
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+</span>
+</span>
+</button></a>
+</div>
+<br>
+<div class="c5">
+<a href="https://www.youtube.com/watch?v=tfQcBeMoM2A" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #2   
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+</span>
+</span>
+</button>
+</a> 
+</div>
+<br/>
+
+<div class="c4">
+<a href="https://www.youtube.com/watch?v=zLBkrTviQ-8" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #3
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+</span>
+</span>
+</button>
+</a>   
+</div>
+<br/>
+<div class="c5">
+<a href="https://www.youtube.com/watch?v=yv74bubHV24" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #4   
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+</span>
+</span>
+</button></a> 
+</div>
+<br/>
+<div class="c4">    
+<a href="https://www.youtube.com/watch?v=FYILivBOho0" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #5
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+</span>
+</span>
+</button></a>
+</div>
+<br>
+<div class="c5">
+<a href="https://www.youtube.com/watch?v=K6G5S3SH7Bk" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #6
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+</span>
+</span>
+</button></a> 
+</div>
+<br/>
+
+<a href="https://youtu.be/A9N_nBbbTL8" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #7
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+</span>
+</span>
+</button></a>
+<br>
+
+</div>
+</article>
+<br />
+<br />
+
+
+<div class="row">
+<div class="column">
+<div class="tooltip">
+<img width="266" height="206" src="https://www.gannett-cdn.com/media/2018/06/25/NJGroup/Bridgewater/636655296985632066-DSC-0027.jpg" alt="" onclick="myFunction(this);"> 
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+
+
+<div class="column">
+<div class="tooltip">
+<img width="266" height="206" src="https://pbs.twimg.com/media/DzkYaoNXcAANWEx.jpg" alt=" " onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+
+<div class="img">
+<div class="column">
+<div class="tooltip">
+<img width="266" height="206" src="https://www.nydailynews.com/resizer/o6hZvNSj52shkyi36QXmbkBwUtU=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/GLLXUVACIJQ6XTURDENWEOMG3E.jpg" alt=" "  onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+
+<div class="column">
+<div class="tooltip">
+<img width="266" height="206" src="https://www.gannett-cdn.com/media/2018/06/25/NJGroup/Bridgewater/636655296914541046-DSC-0006.jpg?width=640" alt="Lights" onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+</div>
+</div>
+<div class="container1">
+<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<img id="expandedImg" style="width:50%;display: block;margin-left: auto;margin-right: auto;">
+<div id="imgtext"></div>
+</div>
+
+
+
+
+
+</main>
+<div class="footer-clean">
+<footer>
+<div class="container">
+<div class="row justify-content-center">
+
+<div class="column1">
+<h3>LINKS</h3>
+<ul>
+<li><a href="" target="_blank">Blank</a></li>
+<li><a href="" target="_blank">Blank</a></li>
+<li><a href="" target="_blank">Blank</a></li>
+</ul>
+</div>
+
+
+<div class="column1">
+<h3>LINKS</h3>
+<ul>
+<li><a href="" target="_blank">Blank</a></li>
+<li><a href="" target="_blank">Blank</a></li>
+<li><a href="" target="_blank">Blank</a></li>
+</ul>
+</div>
+
+
+<div class="column1">
+<h3>LINKS</h3>
+<ul>
+<li><a href="" target="_blank">Blank</a></li>
+<li><a href="" target="_blank">Blank</a></li>
+<li><a href="" target="_blank">Blank</a></li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body>
+
+</html>
+<script>
+
+var open = document.querySelector(".open");
+var cls = document.querySelector(".cls");
+var sub = document.querySelector(".sub-menu");
+var body = document.querySelector(".body");
+var ready = (callback) => {
+if (document.readyState != "laoding") callback();
+else document.addEventListener("DOMContentLoaded", callback);
+}
+
+ready(() => { 
+open.addEventListener("click", function(){
+this.classList.add("oppenned");
+event.stopPropagation();                     
+}) 
+
+body.addEventListener("click", function(){
+open.classList.remove("oppenned");                   
+}) 
+
+cls.addEventListener("click", function(){
+open.classList.remove("oppenned"); 
+event.stopPropagation();   
+}) 
+
+});
+
+
+function myFunction(imgs) {
+var expandImg = document.getElementById("expandedImg");
+var imgText = document.getElementById("imgtext");
+expandImg.src = imgs.src;
+imgText.innerHTML = imgs.alt;
+expandImg.parentElement.style.display = "block";
+}
+
+
+
+</script>
+
+</body>
+
+</html>

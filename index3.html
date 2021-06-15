@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body class="body" style="zoom: 100%;">
+	<style>
+		* {
+			margin: 10;
+			padding: 10;
+			box-sizing: border-box;
+			text-decoration: none;
+			list-style: none;
+		}
+
+		html {
+			font-family: sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%
+		}
+
+
+		h1 {
+			font-family: Arial, Helvetica, sans-serif;
+			color: black;
+			margin-bottom: 50px;
+			font-size: 1.5em;
+		}
+
+		h2 {
+			font-family: "Raleway", sans-serif, Arial, Helvetica;
+			font-size: 2.7em;
+			text-align: center;
+			font-weight: bold;
+			color: #474958;
+			-webkit-transition: font-size 0.3s;
+			-moz-transition: font-size 0.3s;
+			-o-transition: font-size 0.3s;
+			transition: font-size 0.3s;
+		}
+
+		h3 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 30px;
+			color: black;
+
+			-webkit-transition: font-size 0.3s;
+			-moz-transition: font-size 0.3s;
+			-o-transition: font-size 0.3s;
+			transition: font-size 0.3s;
+		}
+
+		.section-wrapper {
+			display: flex;
+			flex-flow: row wrap;
+			flex: 1 1 100%
+		}
+
+		.two-section {
+			width: 50%;
+			padding: 80px 10px 10px 10px;
+			display: flex;
+			flex-flow: column nowrap
+		}
+
+
+		#center {
+			text-align: center;
+			margin-bottom: 25px;
+			margin-top: 20px;
+		}
+
+		#s3 h4 {
+			text-align: center;
+			font-size: 25px;
+			font-weight: italic;
+			padding-top: 40px;
+		}
+
+		#s5 {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#s5 h2 {
+			text-align: center;
+			color: #3C1874;
+		}
+
+		#s5 h3 {
+			text-align: center;
+			color: #3C1874;
+			font-size: 25px;
+		}
+
+		#s5 iframe {
+			max-width: 560px;
+			max-height: 315px;
+		}
+
+		p {
+			font-size: 20px;
+			font-style: italic;
+			font-style: bold;
+			font-family: "Times New Roman", serif;
+			color: black;
+		}
+
+		a {
+			text-decoration: none;
+			color: #7B68EE;
+		}
+
+		article {
+		
+			padding-top: -10px;
+			padding-bottom: 65px;
+			padding-right: 55px;
+			padding-left: 55px;
+			text-align: center;
+		}
+
+		.header {
+			text-align: center;
+		}
+
+		.primary-header {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+		}
+
+		#top-row {
+			background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+			url("https://mdreducation.com/wp-content/uploads/2018/05/MDR-social-emotional-learning.jpg");
+			/*   <!--
+//OR https://mdreducation.com/wp-content/uploads/2018/05/MDR-social-emotional-learning.jpg   
+OR
+//https://i0.wp.com/es.hawthorn73.org/wp-content/uploads/2018/10/Social-Emotional-Learning-Pic2.jpg?fit=500%2C400&amp;ssl=1 OR
+//https://www.volunteerkamloops.org/wp-content/uploads/2020/02/mental-health-istock.jpg
+
+--> */
+			background-size: 30%;
+			background-attachment: fixed;
+			width: 80%;
+			padding-left: 80px;
+			padding-top: 20%;
+			position: relative;
+			right: -20%;
+		}
+
+		#square-info {
+			background-color: white;
+			background-color: rgba(255, 255, 255, 0.5);
+			position: relative;
+			right: 6%;
+			top: -59px;
+			padding-left: 10px;
+			border-radius: 15px;
+			font-size: 24px;
+			margin-left: 25px;
+		}
+
+		#square-info h3 {
+			font-size: 38px;
+			text-align: center;
+			font-variant: small-caps;
+		}
+
+		.main-content {
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column nowrap;
+		}
+
+		.primary-h1 {
+			text-align: center;
+			padding: 25px 0;
+			font: 3em "Oswald", sans-serif;
+			color: #474958;
+			position: relative;
+		}
+
+		hr {
+			width: 6%;
+			margin-left: auto;
+			margin-right: auto;
+			border-top: 3px solid #696969;
+		}
+
+		.generic-header {
+			font-size: 2.3em;
+			font-weight: bold;
+			color: DarkGreen;
+			font-type: italic;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+		}
+
+		.generic-sub {
+			font-size: 1.9em;
+			font-weight: 100;
+			color: DarkGreen;
+			font-type: italic;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-bottom: 5px;
+		}
+
+		.generic-para {
+			font: 1.2em/1.5 Arial;
+			color: rgb(95, 95, 95);
+			margin-bottom: 10px;
+		}
+
+		#generic-para1 {
+			font-size: 28px;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		.margin {
+			margin-right: 6%;
+			margin-left: 6%;
+			padding-top: 30px;
+			padding-bottom: 55px;
+		}
+
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+			padding-left: 60px;
+		}
+
+		.column img {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+
+		.column img:hover {
+			opacity: 1;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.container1 {
+			position: relative;
+			display: none;
+		}
+
+		#imgtext {
+			position: absolute;
+			bottom: 15px;
+			left: 15px;
+			color: white;
+			font-size: 20px;
+		}
+
+		.closebtn {
+			position: absolute;
+			top: 10px;
+			left: 72%;
+			color: white;
+			font-size: 35px;
+			cursor: pointer;
+		}
+
+		.tooltip {
+			position: relative;
+			display: inline-block;
+		}
+
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 120px;
+			background-color: white;
+			color: black;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -60px;
+		}
+
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+		}
+
+		.video {
+			position: relative;
+			padding-bottom: 20%;
+		}
+
+		.video iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+		.video-layout {
+			max-width: 500px;
+			border: 1px solid green;
+		}
+
+		#vid-left {
+			float: left;
+			padding: 5px;
+			width: 33%;
+			box-sizing: border-box;
+		}
+
+		#vid-mid {
+			float: left;
+			padding: 5px;
+			width: 33%;
+			box-sizing: border-box;
+		}
+
+		#vid-right {
+			float: left;
+			padding: 5px;
+			width: 33%;
+			box-sizing: border-box;
+		}
+
+		.c&gt;
+		div {
+			padding: 1em;
+		}
+
+		.c&gt;
+		div {
+			padding: 1em;
+		}
+
+		@media screen and (min-width: 11.42em) {
+			.c4 {
+				float: left;
+				width: 50%;
+				position: relative;
+				top: 20px;
+			}
+			.c5 {
+				float: left;
+				width: 50%;
+				position: relative;
+				bottom: -10px;
+			}
+		}
+
+		.expskills {
+			margin-top: 60px;
+			
+
+			border-bottom: 3px;
+			box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+			border-radius: 5px;
+			width: 95%;
+		}
+
+		.expskill h2 {
+			text-align: center;
+		}
+
+		.expskill iframe {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.expskills1 {
+      margin:0 auto;
+			margin-top: -10px;
+			border-bottom: 3px;
+			box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+			border-radius: 5px;
+			width: 75%;
+		}
+
+		.expskill1 h2 {
+			text-align: center;
+		}
+
+		.expskills2 {
+			margin-top: 50px;
+			margin-left: 35%;
+			border-bottom: 3px;
+			box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.7);
+			border-radius: 5px;
+			width: 65%;
+			height: 48%;
+		}
+
+		.expskill2 h2 {
+			text-align: center;
+		}
+
+		.img-wrap,
+		h1 {
+			text-align: center;
+		}
+
+		.img-wrap a img {
+			display: block;
+		}
+
+		.img-wrap&gt;
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			border: 1px solid #555
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.buttons {
+			margin-top: 50px;
+			text-align: center;
+			border-radius: 30px;
+		}
+
+		.blob-btn {
+			z-index: 1;
+			position: relative;
+			padding: 20px 46px;
+			margin-bottom: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #252525;
+			font-size: 16px;
+			font-weight: bold;
+			background-color: blue;
+			border: 1px solid green;
+			// outline: none;
+			-webkit-transition: color 1.5s;
+			transition: color 1.5s;
+			cursor: pointer;
+			border-radius: 30px;
+		}
+
+		.blob-btn:before {
+			content: "";
+			z-index: 1;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 30px;
+		}
+
+		.blob-btn:after {
+			content: "";
+			z-index: -2;
+			position: absolute;
+			left: 3px;
+			top: 3px;
+			width: 100%;
+			height: 100%;
+			-webkit-transition: all 0.3s 0.2s;
+			transition: all 0.3s 0.2s;
+			border-radius: 30px;
+		}
+
+		.blob-btn:hover {
+			color: #000;
+			border-radius: 30px;
+		}
+
+		.blob-btn:hover:after {
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+			left: 0;
+			top: 0;
+			border-radius: 30px;
+		}
+
+		.blob-btn__inner {
+			z-index: -1;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 30px;
+			background: #ffffff;
+		}
+
+		.blob-btn__blobs {
+			position: relative;
+			display: block;
+			height: 100%;
+			-webkit-filter: url("#goo");
+			filter: url("#goo");
+		}
+
+		.blob-btn__blob {
+			position: absolute;
+			top: 2px;
+			width: 25%;
+			height: 100%;
+			background: #fff;
+			border-radius: 100%;
+			-webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+			transform: translate3d(0, 150%, 0) scale(1.7);
+			-webkit-transition: -webkit-transform 0.45s;
+			transition: -webkit-transform 0.45s;
+			transition: transform 0.45s;
+			transition: transform 0.45s, -webkit-transform 0.45s;
+		}
+
+		.blob-yellow {
+			background: #E0FF00;
+		}
+
+		.blob-blue {
+			background: #76A0D8;
+		}
+
+		.blob-red {
+			background: #f22b0a;
+		}
+
+		.blob-btn:hover.blob-hover-text-white {
+			color: #fff;
+		}
+
+		@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+			.blob-btn__blob {
+				-webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+				transform: translate3d(0, 150%, 0) scale(1.4);
+			}
+		}
+
+		.blob-btn__blob:nth-child(1) {
+			left: 0%;
+			-webkit-transition-delay: 0s;
+			transition-delay: 0s;
+		}
+
+		.blob-btn__blob:nth-child(2) {
+			left: 30%;
+			-webkit-transition-delay: 0.08s;
+			transition-delay: 0.08s;
+		}
+
+		.blob-btn__blob:nth-child(3) {
+			left: 60%;
+			-webkit-transition-delay: 0.16s;
+			transition-delay: 0.16s;
+		}
+
+		.blob-btn__blob:nth-child(4) {
+			left: 90%;
+			-webkit-transition-delay: 0.24s;
+			transition-delay: 0.24s;
+		}
+
+		.blob-btn:hover .blob-btn__blob {
+			-webkit-transform: translateZ(0) scale(1.7);
+			transform: translateZ(0) scale(1.7);
+		}
+
+		@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+			.blob-btn:hover .blob-btn__blob {
+				-webkit-transform: translateZ(0) scale(1.4);
+				transform: translateZ(0) scale(1.4);
+			}
+		}
+	</style>
+
+	<nav>
+		<div class="header">
+			<h2>Sayreville War Memorial High School</h2>
+			<h2>2020 Social Emotional Learning Virtual Event</h2>
+		</div>
+	</nav>
+	<header class="primary-header">
+		<div id="center">
+			<div class="row section" id="top-row">
+				<div style="height: 250px;"></div>
+				<div>
+					<div id="top-row-left-column"></div>
+					<!-- <div id="top-row-right-column"> -->
+					<div id="square-info">
+						<h3>Bombers Be Strong, Be Healthy, Be Happy</h3>
+					</div>
+					<!-- </div> -->
+					<div id="top-row-right-space"></div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<main class="main-content">
+			<h1 class="primary-h1">
+				<span><strong>Welcome</strong></span>
+<hr>
+</h1>
+<article>
+<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna, lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </strong>
+</p>
+</article>
+<div id="s2">
+<h2>Keynote Presentations</h2>
+
+<ul>
+
+<li>
+
+<div class="section-wrapper">
+<section class="two-section">
+<h3>Jehyve Floyd</h3>
+<iframe width="400" height="200" src="https://www.youtube.com/embed/eEaegUEXUJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+Jehyve Floyd is an American basketball player for Hapoel Gilboa Galil of the Israeli Premier League. Floyd played high school basketball at Sayreville War Memorial (Class of 2015). He played college basketball for the Holy Cross Crusaders, where he was named Patriot League Defensive Player of the Year in both 2018 and 2019.
+</p>
+</div>   
+</li>
+</section>
+<section class="two-section divider"> 
+<h3>Dr. Brown- Psychologist Video on Anxiety:</h3>
+<iframe width="400" height="200" src="https://www.youtube.com/embed/uqBA-1JmgAI?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed fermentum ipsum. Mauris ullamcorper diam non arcu ullamcorper interdum. In arcu urna, lobortis at sodales egestas, scelerisque egestas velit. Proin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+
+</li>
+
+</section>
+</div> 
+<li>
+
+
+<div id="center">   
+<h3>Matt Bellace</h3>
+<iframe width="400" height="200" src="https://www.youtube.com/embed/1k9SYA8eehQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+Since 1995, Matt Bellace has been a professional speaker and stand-up comedian. His programs encourage over a hundred thousand youth and adults per year to pursue natural highs and dealing with disappointment in a healthy way.
+<br />
+Dr. Bellace has a Ph.D. in clinical neuropsychology, which is the study of the brain and behavior. He worked at the National Institutes of Mental Health and completed his internship at the traumatic brain and spinal cord units at Mount Sinai Medical Center in New York City. He has also trained in Cognitive Behavioral Therapy at Drexel University’s Counseling Center.
+<br />
+He’s the author of the book, A Better High, a contributing author for the National Geographic Kids series “This or That,” and was a recurring comedian on truTV's "World's Dumbest." He was also featured in the documentary “Voices of Hope,” about recovery from substance abuse.
+<br/>
+Matt’s presentation will focus on mental health and coping with adversity.
+
+</p>
+</div>
+</li>
+
+<li>
+
+
+
+
+
+</ul>
+</section>
+</div>
+
+
+<section>
+<article id="s3">
+<div class="expskills">
+<div class="expskill">
+<h2 class="generic-header">
+Wellness Corner
+</h2>
+<iframe width="400" height="366" src="https://www.youtube.com/embed/wPZM4o21AvA?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p id="generic-para1">
+Nurses-breathing/visualization
+</p>
+<article class="margin" id="s6">
+<h2>Brain Break</h2>
+<br>
+<div id="p">
+<p> <strong>Description:</strong> Need a break from work? School? Take a few minutes to step away from all that and give yourself and your brain a time to think about something else. With these short &ldquo;Brain Break&rdquo; videos, you can release some of that energy by working out.</p>
+</div>
+<br />
+<h4><i><b>Isabella Fitness</b></i></h4>
+<div class="buttons">
+<div class="c4">
+<a href="https://www.youtube.com/watch?v=OXEMqkccdEQ" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #1
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+</span>
+</span>
+</button></a>
+</div>
+<br>
+<div class="c5">
+<a href="https://www.youtube.com/watch?v=tfQcBeMoM2A" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #2
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+</span>
+</span>
+</button>
+</a>
+</div>
+<br>
+<div class="c4">
+<a href="https://www.youtube.com/watch?v=zLBkrTviQ-8" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #3
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+</span>
+</span>
+</button>
+</a>
+</div>
+<br>
+<div class="c5">
+<a href="https://www.youtube.com/watch?v=yv74bubHV24" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #4
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+<span class="blob-btn__blob blob-yellow "></span>
+</span>
+</span>
+</button></a>
+</div>
+<br>
+<div class="c4">
+<a href="https://www.youtube.com/watch?v=FYILivBOho0" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #5
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+</span>
+</span>
+</button></a>
+</div>
+<br>
+<div class="c5">
+<a href="https://www.youtube.com/watch?v=K6G5S3SH7Bk" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #6
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+<span class="blob-btn__blob blob-red "></span>
+</span>
+</span>
+</button></a>
+</div>
+<br>
+<a href="https://youtu.be/A9N_nBbbTL8" target="_blank">
+<button class="blob-btn blob-hover-text-white">
+Brain Break #7
+<span class="blob-btn__inner">
+<span class="blob-btn__blobs">
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+<span class="blob-btn__blob blob-blue "></span>
+</span>
+</span>
+</button></a>
+</div>
+
+</br>
+<h4>Nancy Mannino-Director of Nutrition and Food Service at Sayreville Public Schools</h4> 
+<iframe width="350" height="300" src="https://www.youtube.com/embed/MqT7pmoipyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</br>
+<h4>Tapping Video</h4>
+<p>Check out this tapping video from Go Zen! Tapping is a technique that can quickly reduce stress and anxiety <a href="https://vm.tiktok.com/ZMe6PnfJR/" target="_blank">https://vm.tiktok.com/ZMe6PnfJR/</a></p>
+</br>
+<h4>Social Media Video</h4>
+<p>Check out these tips on how to take a social media break to improve your mental health and well-being.</p>
+</br>
+<h4>Grounding videos by Jonathan from High Focus</h4>
+<p>Jonathan from High Focus presents 3 grounding techniques for anxiety.</p>
+<br />
+<br />
+<iframe width="300" height="200" src="https://www.youtube.com/embed/Sb0tSDewFp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>3 Easy Grounding Skills for Anxiety by Jonathan Mazza</p>
+<br />
+<br />
+<div class="video">
+<div id="vid-left">
+<iframe width="200" height="300" src="https://www.youtube.com/embed/DmMl29sq9X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Grounding Skill #1</p> 
+</div>
+<div id="vid-mid">
+<iframe width="200" height="400" src="https://www.youtube.com/embed/o9njK2M6kng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Grounding Skill #2</p>
+</div>
+<div id="vid-right">
+<iframe width="200" height="300" src="https://www.youtube.com/embed/I5vPl9BH5aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Grounding Skill #3</p>
+
+</div>
+</div>
+</br>
+</br>
+<h4>SADD Club</h4>
+<p>Watch as the Students Against Destructive Decisions (SADD) club talks about stress relief and awareness!</p>
+<iframe width="350" height="250" src="https://www.youtube.com/embed/TI_DBgzQn3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</article>
+</div>
+</div>
+<div class="expskills2">
+<div class="expskill2">
+<br>
+<br>
+<li>
+<h3 class="generic-sub">Create</h3>
+</li>
+<div class="img-wrap">
+<div class="tooltip">
+<a href="http://www.google.com/url?q=http%3A%2F%2Fwww.jacksonpollock.org%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNF6tW85p67StoWmufhUw4PLd6jh4Q"> <img width="266" height="266" src="https://lh4.googleusercontent.com/ZdhhtzoMHNtxkBeq2OFviDdFeosAeIHyg9oi0O5egmw2CEpcWBWlEKeueSoRamvTbb6GmkUnRir3Oi_ushEd5RFdaWMxCTzcbOlQUzZ7N-OCKck06C-qB8Gl8a67Aud-rA=w1280" alt="Jackson Pollock Art"></a>
+<span class="tooltiptext">Click to visit</span>
+</div>
+<div class="tooltip">
+<a href="http://www.google.com/url?q=http%3A%2F%2Fweavesilk.com%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGX4YMi6Jb2d_QH01Moa07Q7vJqIg"> <img width="266" height="266" src="https://lh6.googleusercontent.com/gOd77j8AZ2DAnD4810ib-iCqQ1wM5p_VCR8TjFXqeCXjT4RJX6ARxTJTROhg6-jAvr8nsbFoJSFGnhdL9ZZhZKXnURV4woQZ5C1Ko36Dyl9GbnNfebh3FmTv18JAvEMJhg=w1280" alt="Geometric Interactive Art"></a>
+<span class="tooltiptext">Click to visit</span>
+</div>
+</div>
+<p>Description: Use Reactive Fluid, Geometric Interactive Art, and Spiral Art Maker <a href="https://lh5.googleusercontent.com/3v3X4_HVPSWgQL778_1v8pU9IPBB5hKDO0reczIpResumFLQMmaAepPJHWK_DFsikAlTs8dUhPCcHsaHJUgZogk=w1280">links</a>
+.
+</p>
+<li>
+<h3 class="generic-sub">Staff Video: Ms. Goldstein</h3>
+</li>
+<div class="img-wrap">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/P1cea3o6dYQ?autoplay=1&amp;mute=1&amp;playlist=P1cea3o6dYQ&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="266" height="266" src="https://www.youtube.com/embed/KI9BHLEnW3c?autoplay=1&amp;mute=1&amp;playlist=KI9BHLEnW3c&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</div>
+</div>
+</article>
+</section>
+<section>
+<article id="s4">
+<div class=" expskills1">
+<div class="expskill1">
+<h2 class="generic-header">
+Zen Zone
+</h2>
+<ul>
+<li>
+<h3 class="generic-sub">Calming Sounds</h3>
+</li>
+<p>Description: Use the sounds below in whatever way is most helpful - as background noise to help you focus while you study, as a quick break, during meditation or sleep, etc.</p>
+<p class="generic-para">
+</p>
+<div class="video">
+<div id="vid-left">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/dZcuKVA4t5o?autoplay=1&amp;mute=1&amp;playlist=dZcuKVA4t5o&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<div id="vid-mid">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/QZbuj3RJcjI?autoplay=1&amp;mute=1&amp;playlist=QZbuj3RJcjI&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<div id="vid-right">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/savCAd6RyPI?autoplay=1&amp;mute=1&amp;playlist=savCAd6RyPI&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+</div>
+<br>
+<br>
+<li>
+<h3 class="generic-sub">Visual Calming Videos</h3>
+</li>
+<div class="video">
+<div id="vid-left">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/b3B1Jh9Xrow?autoplay=1&amp;mute=1&amp;playlist=b3B1Jh9Xrow&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<div id="vid-mid">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/chUwpgiE83I?autoplay=1&amp;mute=1&amp;playlist=chUwpgiE83I&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<div id="vid-right">
+<iframe width="266" height="266" src="https://www.youtube.com/embed/T75IKSXVXlc?autoplay=1&amp;mute=1&amp;playlist=T75IKSXVXlc&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+</div>
+</ul>
+</div>
+</div>
+<p>&nbsp;</p>
+</article>
+</section>
+
+<article id="s5">
+<div class="expskills1">
+<div class="expskill1">
+<h2>Mindfulness</h2>
+<br>
+
+<iframe width="500" height="400" src="https://www.youtube.com/embed/e8AIW4tIOD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>Mindfulness Introduction</h3>
+<p>A message from the advisors of the Mindfulness club! Interested in joining? Here is the <strong>Google classroom code to join</strong>: <a href = "https://classroom.google.com/u/1/c/MjA5MDU2MTQxODJa">DI4DPVX</a>
+</p>
+<br />
+<br />
+<div class="video">
+<div id="vid-left">
+<iframe width="300" height="266" src="https://www.youtube.com/embed/QTsUEOUaWpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<h3>What is Mindfulness?</h3>
+
+<!--             <div id="vid-mid"> -->
+<iframe width="300" height="266" src="https://www.youtube.com/embed/ZToicYcHIOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<h3>10 Min Daily Meditation</h3>
+</div>  
+<div id="vid-mid">
+<iframe width="400" height="200" src="https://www.youtube.com/embed/cEqZthCaMpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>Headspace | Mini meditation | Breathe</h3>
+
+
+
+
+<iframe width="400" height="200" src="https://www.youtube.com/embed/vARDGh069VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>5 Minute Mindfulness Meditation "Open Field" Guided Middle High School Students Calm Classroom Break</h3>
+</div>
+<div id="vid-right">
+
+<iframe width="400" height="200" src="https://www.youtube.com/embed/c1Ndym-IsQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>Headspace | Mini Meditation | Let Go of Stress</h3>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</main>
+
+</div>
+<article class="margin" id="s6">
+<h2>Community Resources</h2>
+<br>
+<p> <strong>Jamie Hanley</strong></p>
+<p><a href="http://www.jamiehanley.com/wp-content/uploads/2020/04/Coping-skills-eBook.pdf" target="_blank">http://www.jamiehanley.com/wp-content/uploads/2020/04/Coping-skills-eBook.pdf</a></p>
+<p>Contact info: 1 Bethany Road,Building 5, Suite 69, Hazlet, NJ 07730</p>
+<p><strong>Phone Number: </strong><a href="tel:+1732-800-1307">732.800.1307</a></p>
+<p><strong>Mail: </strong><a href="mailto:info@jamiehanley.com" target="_blank">info@jamiehanley.com</a></p>
+<br>
+<br>
+<p> <strong>High Focus Treatment Centers</strong></p>
+<p><a href="https://highfocuscenters.pyramidhealthcarepa.com/" target="_blank">https://highfocuscenters.pyramidhealthcarepa.com/</a></p>
+<p>High Focus Centers is New Jersey&rsquo;s premier provider of structured outpatient substance abuse and psychiatric treatment programs.</p>
+<p><strong>Phone Number: </strong><a href="tel:+1877-716-7079">877.716.7079</a></p>
+<br>
+<br>
+<p> <strong>Center for Wellness</strong></p>
+<p><a href="" target="_blank">Center for Wellness</a></p>
+<p>&nbsp;</p>
+<p><strong>Phone Number: </strong><a href="tel:+1"></a></p>
+<br>
+<br>
+<p> <strong>2nd Floor Helpline</strong></p>
+<p><strong>2NDFLOOR<strong> is a confidential and anonymous helpline for New Jersey's youth and young adults. They are available 24/7 365 days a year to help you find solutions to the problems that you face.</strong></strong></p>
+<strong>
+<strong>
+<p><strong>Call or Text</strong><a href="tel:+1-888-222-2228"></a> 1-888-222-2228</p>
+<br>
+<br>
+<p> <strong>SWMHS Counselors</strong></p>
+<p><a href="http://sayreville.ss8.sharpschool.com/departments/counseling_department" target="_blank">http://sayreville.ss8.sharpschool.com/departments/counseling_department</a></p>
+<p>	Office Hours:  Monday - Friday, 7:15 am - 3:30 pm</p>
+<p><strong>Phone Number: </strong><a href="tel:+187732-525-5280">732-525-5280</a></p>
+<br>
+<br>
+<p> <strong>Student Assistance Counselor</strong></p>
+<p><a href="mailto:alexandra.catena@sayrevillek12.net" target="_blank">alexandra.catena@sayrevillek12.net </a></p>
+<p>	Ms. Catena, the Student Assistance Counselor (SAC) is a confidential resource that provides substance use education and counseling to students. In addition, Ms. Catena provides support to students for personal issues that may be bothering them or keeping them from being most successful. Students who meet with the SAC were referred by a parent/guardian, school personnel,  a friend with concern, or themselves.</p>
+</strong>
+</strong>
+</article>
+<strong>
+<strong>
+<br>
+
+<br>
+<br>
+<div class="row">
+<div class="column">
+<div class="tooltip">
+<img width="100" height="100" src="https://www.gannett-cdn.com/media/2018/06/25/NJGroup/Bridgewater/636655296985632066-DSC-0027.jpg" alt="" onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+<div class="column">
+<div class="tooltip">
+<img width="100" height="100" src="https://pbs.twimg.com/media/DzkYaoNXcAANWEx.jpg" alt=" " onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+<div class="img">
+<div class="column">
+<div class="tooltip">
+<img width="100" height="100" src="https://www.nydailynews.com/resizer/o6hZvNSj52shkyi36QXmbkBwUtU=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/GLLXUVACIJQ6XTURDENWEOMG3E.jpg" alt=" " onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+<div class="column">
+<div class="tooltip">
+<img width="100" height="100" src="https://www.gannett-cdn.com/media/2018/06/25/NJGroup/Bridgewater/636655296914541046-DSC-0006.jpg?width=640" alt="Lights" onclick="myFunction(this);">
+<span class="tooltiptext">Click to view image</span>
+</div>
+</div>
+</div>
+</div>
+<div class="container1">
+<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<img id="expandedImg" style="width:50%;display: block;margin-left: auto;margin-right: auto;">
+<div id="imgtext"></div>
+</div>
+
+
+<script>
+var open = document.querySelector(".open");
+var cls = document.querySelector(".cls");
+var sub = document.querySelector(".sub-menu");
+var body = document.querySelector(".body");
+
+function myFunction(imgs) {
+var expandImg = document.getElementById("expandedImg");
+var imgText = document.getElementById("imgtext");
+expandImg.src = imgs.src;
+imgText.innerHTML = imgs.alt;
+expandImg.parentElement.style.display = "block";
+}
+
+
+
+</script>
+</strong>
+</strong>
+</body>
+</html>
